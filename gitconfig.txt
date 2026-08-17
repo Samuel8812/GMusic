@@ -1,0 +1,27 @@
+git config --global user.name Samuel8812
+git config --global user.email samuelbardelicanal@gmail.com
+
+-- Criar um projeto React Native Expo
+npx create-expo-app@latest GMusic --template blank@57
+cd GMusic
+
+--Restaurar i projeto
+cd GMusic
+npm i @expo/vector-icons
+
+--Executar o projeto
+npx expo start --web
+npx expo start --android
+npx expo start --tunnel --android
+
+-- instalando os pacotes
+cd GMusic
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+--Biblioteca a serem instaladas
+npx expo install react-dom react-native-web/metro-runtime
+npx expo install expo-audio expo-linear-gradient
+expo-splash-screen expo-status-bar
+npx expo install react-native-safe-area-context
+@react-native-community/slider
+npx expo install @expo/vector-icons expo-font
